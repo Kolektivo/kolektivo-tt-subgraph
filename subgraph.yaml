@@ -1,0 +1,32 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: KolektivoNetworkStamps
+    network: celo
+    source:
+      address: "0xFEA2f0473e2d6F537B285b1A22320d698371A1A1"
+      abi: KolektivoNetworkStamps
+      startBlock: 25989055
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Approval
+        - OwnershipTransferred
+        - Transfer
+      abis:
+        - name: KolektivoNetworkStamps
+          file: ./abis/KolektivoNetworkStamps.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/kolektivo-network-stamps.ts
