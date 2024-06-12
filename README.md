@@ -17,6 +17,8 @@ The Subgraph for the Kolektivo TT Installation.
 
 This repository contains the subgraph for the Kolektivo TT installation. A subgraph defines the data structure and the way data is indexed from the blockchain, making it easy to query.
 
+The contracts and documentaiton of the badges of the platform can be found [here](https://github.com/Kolektivo-Labs/Kolektivo-network-badges)
+
 ## Prerequisites
 
 Before you begin, ensure you have Node.js and npm installed, Docker (for running a local Graph Node), and Yarn.
