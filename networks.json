@@ -3,6 +3,12 @@
     "KolektivoNetworkStamps": {
       "address": "0xFEA2f0473e2d6F537B285b1A22320d698371A1A1",
       "startBlock": 25989055
+    },
+    "KolektivoNetworkBadges": {
+      "address": "0x39Ccf286c51F9232eAadAEb348ec7c1B93D54cB9"
+    },
+    "KolektivoNetworkFactory": {
+      "address": "0x986e89ECEAF6fD20Be1eb39687CFf94b981603a1"
     }
   }
 }
